@@ -8,7 +8,6 @@ const forecast = (lat, long, callback) => {
             callback('Unable to connect to weather service!', undefined);
         }else if (body.error) { // invalid user's input
             callback('Unable to find location!', undefined);
-            console.log();
         } else {
             callback(undefined, body.currently);
         }

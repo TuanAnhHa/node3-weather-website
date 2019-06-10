@@ -62,13 +62,6 @@ app.get('/weather', (req, res) => {
             })
         });
     });
-    /*
-    res.send({
-        forecast: 'Raining',
-        location: 'Berlin',
-        address: req.query.address
-    });
-    */
 });
 
 app.get('/products', (req, res) => {
